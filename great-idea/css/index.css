@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,25 +91,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -49,18 +136,210 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin-top: 40px;
+}
+
+
+.topnav {
+	position: fixed;
+	width: 880px;
+	background-color: dodgerblue;
+	top: 0;
+}
+
+.topnav a {
+	margin: 15px;
+	vertical-align: middle;
+	margin-right: 43px;
+
+}
+
+header {
+	display: flex;
+	margin-bottom: 20px;
+	width: 880px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logo {
+	margin-left: 20px;
+}
+
+.main-heading {
+	text-align: center;
+	padding: 10px;
+	width: 880px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.headerimg {}
+
+h1 {
+	font-size: 80px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+.getstarted {
+	border: 1px solid black;
+	background: white;
+	padding: 5px 40px;
+	border-radius: 5px;
+}
+
+.topnav {
+	display: flex;
+	margin-left: 320px;
+	width: 880px;
+}
+
+.nav-link {
+	display: flex;
+	margin: 0 0 20px 10px;
+	color: black;
+	text-decoration: none;
+}
+
+.top-content {
+	width: 880px;
+	column-count: 2;
+	border-top: 1px black solid;
+	padding-top: 15px;
+	padding-bottom: 25px;
+	width: 880px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.horizontal-img {
+	width: 880px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bottom-content {
+	width: 880px;
+	column-count: 3;
+	border-bottom: 1px black solid;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	width: 880px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contact {
+	width: 880px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer {
+	text-align: center;
+	width: 880px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* --------- Services page ---------*/
+.pageheader {
+	display: flex;
+	flex-direction: column;
+	width: 880px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.servicesheader {
+	font-size: 25px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+}
+
+.services {
+	display: flex;
+	flex-wrap: wrap;
+	width: 880px;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: space-evenly;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding-bottom: 30px;
+
+}
+
+.learnmorebutton {
+	width: 150px;
+	height: 30px;
+	margin-top: 20px;
+	border-radius: 5px;
+	background-color: white;
+	border: 1px solid black;
+}
+
+.servicesinfoboxes {
+	width: 420px;
+	padding: 25px;
+	margin-top: 40px;
+	border: 1px black solid;
+	margin-left: 15px;
+	box-shadow: 5px 5px grey;
+	height: 250px;
+	background-color: #DCDCDC;
+}
+
+.services-header-img {}
+
+.servicesfactsandimg {
+	width: 880px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	margin-top: 35px;
+}
+
+.servicesfactsandul {
+	margin-right: 20px;
+}
+
+.services-info-img {
+	margin-left: 20px;
+}
+
+ul {
+	list-style: square;
+	padding-left: 50px;
+}
